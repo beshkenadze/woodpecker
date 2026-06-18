@@ -1,0 +1,24 @@
+{
+  "name": "@woodpecker/matrix",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Matrix notification service for shoutrrr (Node.js/Bun port)",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@woodpecker/core": "workspace:*",
+    "undici": "^8.5.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^6.0.3"
+  }
+}

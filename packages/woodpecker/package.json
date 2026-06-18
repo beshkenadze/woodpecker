@@ -1,0 +1,42 @@
+{
+  "name": "@woodpecker/woodpecker",
+  "version": "0.0.0",
+  "description": "Woodpecker umbrella package — registers all notification services into the core router and re-exports the public API.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@woodpecker/core": "workspace:*",
+    "@woodpecker/bark": "workspace:*",
+    "@woodpecker/discord": "workspace:*",
+    "@woodpecker/generic": "workspace:*",
+    "@woodpecker/googlechat": "workspace:*",
+    "@woodpecker/gotify": "workspace:*",
+    "@woodpecker/ifttt": "workspace:*",
+    "@woodpecker/join": "workspace:*",
+    "@woodpecker/logger": "workspace:*",
+    "@woodpecker/matrix": "workspace:*",
+    "@woodpecker/mattermost": "workspace:*",
+    "@woodpecker/ntfy": "workspace:*",
+    "@woodpecker/opsgenie": "workspace:*",
+    "@woodpecker/pushbullet": "workspace:*",
+    "@woodpecker/pushover": "workspace:*",
+    "@woodpecker/rocketchat": "workspace:*",
+    "@woodpecker/slack": "workspace:*",
+    "@woodpecker/smtp": "workspace:*",
+    "@woodpecker/teams": "workspace:*",
+    "@woodpecker/telegram": "workspace:*",
+    "@woodpecker/zulip": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^6.0.3"
+  }
+}

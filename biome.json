@@ -1,0 +1,8 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
+  "files": { "includes": ["**", "!**/node_modules", "!**/.turbo"] },
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2 },
+  "javascript": { "formatter": { "quoteStyle": "double" } },
+  "linter": { "enabled": true, "rules": { "recommended": true } },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } }
+}

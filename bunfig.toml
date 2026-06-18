@@ -1,0 +1,7 @@
+[install]
+# Workspace install hoists shared dev deps to the root node_modules.
+exact = false
+
+[test]
+# Run *.test.ts under each package's test/ directory.
+root = "."
