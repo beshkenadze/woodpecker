@@ -9,7 +9,7 @@ concurrency: release-${{ github.ref }}
 permissions:
   contents: write # create the Version Packages PR / tags
   pull-requests: write # open/update the Version Packages PR
-  id-token: write # OIDC — npm trusted publishing (no NPM_TOKEN needed)
+  id-token: write # build provenance attestation (OIDC)
 
 jobs:
   release:
@@ -19,20 +19,22 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: "1.3.14"
-      # Node provides the npm CLI used for the actual publish. Trusted
-      # publishing (OIDC) only works via `npm publish`, and needs npm >= 11.5.1.
+      # npm CLI does the actual publish (changeset publish -> npm publish).
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
       - run: npm install -g npm@latest
       - run: bun install --frozen-lockfile
-      # changesets/action opens a "Version Packages" PR; on merge it runs the
-      # publish script, which calls `changeset publish` (npm publish under the
-      # hood). With id-token:write + a configured trusted publisher, npm
-      # authenticates via OIDC and attaches provenance automatically.
+      # One granular token scoped to @woodpecker-js publishes every package —
+      # no per-package config. Provenance is still attached via id-token below.
+      - name: Configure npm auth
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: printf '//registry.npmjs.org/:_authToken=%s\n' "$NPM_TOKEN" > "$HOME/.npmrc"
       - uses: changesets/action@v1
         with:
           version: bun run version
           publish: bun run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_PROVENANCE: "true"
