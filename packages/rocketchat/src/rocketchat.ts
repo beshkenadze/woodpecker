@@ -1,5 +1,5 @@
-import type { Logger, Params, Service } from "@woodpecker/core";
-import { ContentType, JsonClient, Standard } from "@woodpecker/core";
+import type { Logger, Params, Service } from "@woodpecker-js/core";
+import { ContentType, JsonClient, Standard } from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config } from "./config.js";
 import { createJSONPayload } from "./payload.js";

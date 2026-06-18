@@ -1,7 +1,12 @@
-import type { Service } from "@woodpecker/core";
+import type { Service } from "@woodpecker-js/core";
 import { MatrixService } from "./matrix.js";
 
-export type { Logger, Params, Service, ServiceConfig } from "@woodpecker/core";
+export type {
+  Logger,
+  Params,
+  Service,
+  ServiceConfig,
+} from "@woodpecker-js/core";
 export { MatrixClient } from "./client.js";
 export { Config, Scheme } from "./config.js";
 export { MatrixService } from "./matrix.js";

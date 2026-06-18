@@ -5,13 +5,13 @@ import type {
   Service as IService,
   Logger,
   Params,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import {
   ContentType,
   JsonClient,
   PropKeyResolver,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config, configSchema } from "./config.js";
 import type { APIResponse, MessagePayload } from "./payload.js";

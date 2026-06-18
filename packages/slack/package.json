@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/slack",
+  "name": "@woodpecker-js/slack",
   "version": "0.1.0",
   "description": "Shoutrrr Slack notification service (Node.js/TypeScript port)",
   "type": "module",
@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

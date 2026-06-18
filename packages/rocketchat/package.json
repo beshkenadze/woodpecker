@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/rocketchat",
+  "name": "@woodpecker-js/rocketchat",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -15,7 +15,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

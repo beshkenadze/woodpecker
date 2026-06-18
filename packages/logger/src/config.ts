@@ -1,6 +1,6 @@
 // Port of Go pkg/services/logger/logger_config.go
-import type { FieldSchema, ServiceConfig } from "@woodpecker/core";
-import { EnumlessConfig } from "@woodpecker/core";
+import type { FieldSchema, ServiceConfig } from "@woodpecker-js/core";
+import { EnumlessConfig } from "@woodpecker-js/core";
 
 /** Scheme is the identifying part of this service's configuration URL. */
 export const Scheme = "logger";

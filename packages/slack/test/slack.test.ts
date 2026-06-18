@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import type { FetchLike } from "@woodpecker/core";
+import type { FetchLike } from "@woodpecker-js/core";
 import { Config, createConfigFromURL } from "../src/config.js";
 import { ErrorInvalidToken } from "../src/errors.js";
 import { createJSONPayload, MessagePayload } from "../src/payload.js";

@@ -4,7 +4,7 @@ import {
   MessageLevel,
   PropKeyResolver,
   type ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { MessageLevelCount } from "./message.ts";
 
 /** Scheme is the identifying part of this service's configuration URL. */

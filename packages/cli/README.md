@@ -1,4 +1,4 @@
-# @woodpecker/cli
+# @woodpecker-js/cli
 
 Node.js/Bun port of the [shoutrrr](https://github.com/containrrr/shoutrrr) CLI —
 a URL-driven notification sender. Faithful port of the Go cobra CLI

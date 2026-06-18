@@ -1,6 +1,6 @@
 import { GenericService } from "./generic.ts";
 
-export type { Logger, Params, Service } from "@woodpecker/core";
+export type { Logger, Params, Service } from "@woodpecker-js/core";
 export {
   Config,
   configFromWebhookURL,

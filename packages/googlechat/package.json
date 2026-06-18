@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/googlechat",
+  "name": "@woodpecker-js/googlechat",
   "version": "0.1.0",
   "description": "Shoutrrr Google Chat notification service (Node.js/TypeScript port)",
   "type": "module",
@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

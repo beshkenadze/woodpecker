@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from "bun:test";
-import { PropKeyResolver } from "@woodpecker/core";
+import { PropKeyResolver } from "@woodpecker-js/core";
 import { Config, defaultDeviceID, matrixFields } from "../src/config.js";
 import { MatrixService } from "../src/matrix.js";
 import { escapePathSegment } from "../src/urlpath.js";

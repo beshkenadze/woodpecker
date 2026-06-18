@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it } from "bun:test";
 
 type Server = ReturnType<typeof Bun.serve>;
 
-import { PropKeyResolver } from "@woodpecker/core";
+import { PropKeyResolver } from "@woodpecker-js/core";
 import { fields } from "../src/config.js";
 import {
   APIKeyMissing,

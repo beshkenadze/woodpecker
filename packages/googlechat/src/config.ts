@@ -1,5 +1,5 @@
 // Port of Go pkg/services/googlechat/googlechat_config.go.
-import { EnumlessConfig } from "@woodpecker/core";
+import { EnumlessConfig } from "@woodpecker-js/core";
 
 export const Scheme = "googlechat";
 

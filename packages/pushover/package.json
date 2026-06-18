@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/pushover",
+  "name": "@woodpecker-js/pushover",
   "version": "0.1.0",
   "description": "Pushover notification service for the shoutrrr Node.js port",
   "type": "module",
@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

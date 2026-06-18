@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "bun:test";
-import { ApiError, JsonClient } from "@woodpecker/core";
+import { ApiError, JsonClient } from "@woodpecker-js/core";
 import { createConfigFromURL, MattermostConfig } from "../src/config.js";
 import { buildURL, descriptor, MattermostService } from "../src/index.js";
 import {

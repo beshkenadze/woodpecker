@@ -1,6 +1,6 @@
 // Port of pkg/services/slack/slack_token.go
 
-import type { ConfigProp } from "@woodpecker/core";
+import type { ConfigProp } from "@woodpecker-js/core";
 import { ErrorInvalidToken, ErrorMismatchedTokenSeparators } from "./errors.js";
 
 const hookTokenIdentifier = "hook";

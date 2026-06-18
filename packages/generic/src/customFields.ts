@@ -1,11 +1,11 @@
 /**
- * Custom-fields query helpers — service-local because @woodpecker/core does not
+ * Custom-fields query helpers — service-local because @woodpecker-js/core does not
  * export a custom-fields query builder. Faithful port of Go
  * `BuildQueryWithCustomFields` / `SetConfigPropsFromQuery`, using core's
  * `KEY_PREFIX` ('__') to escape webhook query keys that collide with config
  * prop keys.
  */
-import { KEY_PREFIX, type PropKeyResolver } from "@woodpecker/core";
+import { KEY_PREFIX, type PropKeyResolver } from "@woodpecker-js/core";
 
 /** EscapeKey prefixes a config-prop-colliding custom query key. */
 function escapeKey(key: string): string {

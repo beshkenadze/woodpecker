@@ -1,4 +1,4 @@
-import type { Params } from "@woodpecker/core";
+import type { Params } from "@woodpecker-js/core";
 import type { Config } from "./config.js";
 
 // RocketchatPayload is the JSON body accepted by the Rocket.Chat webhook API.

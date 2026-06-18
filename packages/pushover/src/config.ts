@@ -1,5 +1,5 @@
-import type { EnumFormatter, ServiceConfig } from "@woodpecker/core";
-import { type FieldSchema, PropKeyResolver } from "@woodpecker/core";
+import type { EnumFormatter, ServiceConfig } from "@woodpecker-js/core";
+import { type FieldSchema, PropKeyResolver } from "@woodpecker-js/core";
 
 /** Scheme is the identifying part of this service's configuration URL. */
 export const Scheme = "pushover";

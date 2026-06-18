@@ -1,4 +1,4 @@
-export * from "@woodpecker/core";
+export * from "@woodpecker-js/core";
 export {
   Config,
   fieldSchema,

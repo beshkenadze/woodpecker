@@ -6,7 +6,7 @@ import {
   PropKeyResolver,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import {
   buildWebhookURL,
   Config,

@@ -1,7 +1,7 @@
 // Port of Go pkg/services/smtp/smtp.go, using nodemailer for transport.
 import { hostname } from "node:os";
-import type { Logger, Params, Service } from "@woodpecker/core";
-import { Standard } from "@woodpecker/core";
+import type { Logger, Params, Service } from "@woodpecker-js/core";
+import { Standard } from "@woodpecker-js/core";
 import nodemailer from "nodemailer";
 import { AuthType } from "./authType.js";
 import { Config } from "./config.js";

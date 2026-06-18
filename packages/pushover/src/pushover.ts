@@ -1,5 +1,9 @@
-import type { FetchLike, Logger, Params, Service } from "@woodpecker/core";
-import { JsonClient, type PropKeyResolver, Standard } from "@woodpecker/core";
+import type { FetchLike, Logger, Params, Service } from "@woodpecker-js/core";
+import {
+  JsonClient,
+  type PropKeyResolver,
+  Standard,
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config } from "./config.js";
 

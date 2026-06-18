@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/ntfy",
+  "name": "@woodpecker-js/ntfy",
   "version": "0.1.0",
   "description": "ntfy notification service for shoutrrr (Node.js/Bun port)",
   "type": "module",
@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

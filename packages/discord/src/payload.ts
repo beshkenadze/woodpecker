@@ -1,4 +1,4 @@
-import { MessageLevel } from "@woodpecker/core";
+import { MessageLevel } from "@woodpecker-js/core";
 import { levelString, type MessageItem } from "./message.ts";
 
 /** EmbedFooter mirrors Go discord.embedFooter. */

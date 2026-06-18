@@ -1,5 +1,5 @@
 // Ported from Go pkg/services/ntfy/ntfy_priority.go.
-import { createEnumFormatter, type EnumFormatter } from "@woodpecker/core";
+import { createEnumFormatter, type EnumFormatter } from "@woodpecker-js/core";
 
 /** Priority enum integer values. */
 export const Priority = {

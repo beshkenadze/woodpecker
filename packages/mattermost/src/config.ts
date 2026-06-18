@@ -3,7 +3,7 @@ import {
   type FieldSchema,
   PropKeyResolver,
   type ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 
 /** Identifying scheme for the mattermost service. */
 export const SCHEME = "mattermost";

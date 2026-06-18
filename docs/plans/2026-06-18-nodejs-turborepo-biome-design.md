@@ -47,7 +47,7 @@ Packages need no structural change — `build: tsc --noEmit` and `test: bun test
 are already uniform across all 23. Turbo invokes them as-is. Biome reformats all
 sources (including the CLI's vendored `cli/src/core`).
 
-Unchanged: package structure, `@woodpecker/core` API, test semantics (style only),
+Unchanged: package structure, `@woodpecker-js/core` API, test semantics (style only),
 bun workspace links, library/CLI behavior.
 
 ## Turbo pipeline
@@ -75,7 +75,7 @@ bun workspace links, library/CLI behavior.
   result + logs keyed on `inputs`, so a no-change `turbo build` is an instant
   cache hit.
 - `dependsOn: ["^build"]` is a convention/safety here (packages typecheck
-  against `@woodpecker/core` *source*, so it is not strictly required).
+  against `@woodpecker-js/core` *source*, so it is not strictly required).
 - `test` does not depend on `build` (tests run sources via bun).
 - Narrow `inputs` keep the cache from being invalidated by unrelated files; the
   Biome reformat does not bust build/test caches unless code changes.

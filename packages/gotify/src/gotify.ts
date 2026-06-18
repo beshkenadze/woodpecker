@@ -5,7 +5,7 @@ import {
   type Params,
   PropKeyResolver,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config } from "./config.js";
 import {

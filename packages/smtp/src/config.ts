@@ -4,8 +4,8 @@ import type {
   EnumFormatter,
   FieldSchema,
   ServiceConfig,
-} from "@woodpecker/core";
-import { PropKeyResolver } from "@woodpecker/core";
+} from "@woodpecker-js/core";
+import { PropKeyResolver } from "@woodpecker-js/core";
 import { AuthType, authTypeFormatter } from "./authType.js";
 import { Encryption, encryptionFormatter } from "./encMethod.js";
 

@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "bun:test";
-import type { Params } from "@woodpecker/core";
-import { PropKeyResolver } from "@woodpecker/core";
+import type { Params } from "@woodpecker-js/core";
+import { PropKeyResolver } from "@woodpecker-js/core";
 import {
   Config,
   configFromWebhookURL,

@@ -1,5 +1,5 @@
 // Port of telegram_client.go
-import { ApiError, JsonClient } from "@woodpecker/core";
+import { ApiError, JsonClient } from "@woodpecker-js/core";
 import type {
   ErrorResponse,
   Message,

@@ -1,17 +1,17 @@
 # Releasing & publishing
 
-`@woodpecker/*` packages are published to the **public npm registry** with
+`@woodpecker-js/*` packages are published to the **public npm registry** with
 [Changesets](https://github.com/changesets/changesets) + Turborepo. Each package
 builds to `dist/` (ESM `.mjs` + `.d.mts`) via [tsdown](https://tsdown.dev) and
 ships only `dist/` (see each `package.json` `files`).
 
 ## One-time setup (owner)
 
-1. **Create the npm scope `@woodpecker`.** On npmjs.com → *Add Organization* →
-   name `woodpecker` (free for public packages), or ensure your npm user owns
-   the scope. All packages already set `publishConfig.access = "public"`.
+1. **Create the npm org `@woodpecker-js`.** On npmjs.com → *Add Organization* →
+   name `woodpecker-js` (free for public packages; the bare `woodpecker` org is
+   taken). All packages already set `publishConfig.access = "public"`.
 2. **Create an npm token.** npm → *Access Tokens* → *Generate New Token* →
-   **Automation** (or *Granular*, read+write to `@woodpecker/*`).
+   **Automation** (or *Granular*, read+write to `@woodpecker-js/*`).
 3. **Add it as a repo secret.** GitHub → repo *Settings → Secrets and variables →
    Actions* → new secret **`NPM_TOKEN`**.
 
@@ -57,8 +57,8 @@ Versions start at `0.1.0`. After the scope + `NPM_TOKEN` are in place, either:
 ## Notes
 
 - `workspace:*` deps are rewritten to real version ranges at publish time.
-- Consumers install the umbrella `@woodpecker/woodpecker` (all services) or any
-  single service, e.g. `@woodpecker/slack`; the CLI is `@woodpecker/cli`.
+- Consumers install the umbrella `@woodpecker-js/woodpecker` (all services) or any
+  single service, e.g. `@woodpecker-js/slack`; the CLI is `@woodpecker-js/cli`.
 - The packages declare `license: "MIT"`; the repo-root `LICENSE` applies.
   (Optional: copy `LICENSE` into each package before publish if you want it in
   every tarball.)

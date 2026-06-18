@@ -8,7 +8,7 @@ import {
   parseBody,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { MattermostConfig, QUERY_SCHEMA } from "./config.js";
 import { createJSONPayload, serializePayload } from "./payload.js";
 

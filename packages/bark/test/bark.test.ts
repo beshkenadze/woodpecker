@@ -77,7 +77,7 @@ describe("bark config", () => {
 });
 
 describe("bark send (mocked HTTP)", () => {
-  // The service sends via @woodpecker/core's fetch-based JsonClient. We drive a
+  // The service sends via @woodpecker-js/core's fetch-based JsonClient. We drive a
   // real local server and point the service at it via an http:// bark URL so we
   // can capture and assert the wire request (method, path, content type, body).
   let server: ReturnType<typeof Bun.serve> | undefined;

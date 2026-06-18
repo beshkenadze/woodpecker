@@ -6,7 +6,7 @@ import {
   type Logger,
   type Params,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { Config } from "./config.js";
 import type { MessageItem, MessageLimit } from "./message.ts";
 import { messageItemsFromLines, partitionMessage } from "./partitionMessage.ts";

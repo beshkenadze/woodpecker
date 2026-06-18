@@ -1,7 +1,7 @@
 // Port of Go pkg/services/smtp/smtp_encmethod.go.
 
-import type { EnumFormatter } from "@woodpecker/core";
-import { createEnumFormatter } from "@woodpecker/core";
+import type { EnumFormatter } from "@woodpecker-js/core";
+import { createEnumFormatter } from "@woodpecker-js/core";
 
 /** Encryption is the transport encryption method (Go: encMethod). */
 export enum Encryption {

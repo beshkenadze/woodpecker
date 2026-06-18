@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "bun:test";
-import { MessageLevel } from "@woodpecker/core";
+import { MessageLevel } from "@woodpecker-js/core";
 import { Config } from "../src/config.js";
 import {
   createAPIURLFromConfig,
@@ -93,7 +93,7 @@ describe("the discord service", () => {
       config.token = "dummyToken";
       // A non-default color so it is not omitted as equal to the schema default.
       config.color = 0xff00ff;
-      // @woodpecker/core renders base-16 uint fields as bare hex digits.
+      // @woodpecker-js/core renders base-16 uint fields as bare hex digits.
       expect(config.getURL().searchParams.get("color")).toBe("ff00ff");
     });
 

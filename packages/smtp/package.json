@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/smtp",
+  "name": "@woodpecker-js/smtp",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "nodemailer": "^9.0.1"
   },
   "devDependencies": {

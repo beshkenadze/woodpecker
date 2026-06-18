@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/join",
+  "name": "@woodpecker-js/join",
   "version": "0.1.0",
   "description": "Shoutrrr Join notification service (Node.js/Bun port)",
   "type": "module",
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

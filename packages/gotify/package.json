@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/gotify",
+  "name": "@woodpecker-js/gotify",
   "version": "0.1.0",
   "type": "module",
   "private": true,
@@ -18,7 +18,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {

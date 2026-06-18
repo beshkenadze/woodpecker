@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/pushbullet",
+  "name": "@woodpecker-js/pushbullet",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*"
+    "@woodpecker-js/core": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",

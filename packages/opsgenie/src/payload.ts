@@ -1,4 +1,4 @@
-import type { ConfigProp } from "@woodpecker/core";
+import type { ConfigProp } from "@woodpecker-js/core";
 
 const OPSGENIE_ID =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;

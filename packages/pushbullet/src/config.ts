@@ -6,7 +6,7 @@ import {
   type FieldSchema,
   type Params,
   PropKeyResolver,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 
 export const SCHEME = "pushbullet";
 

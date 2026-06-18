@@ -1,5 +1,5 @@
 {
-  "name": "@woodpecker/teams",
+  "name": "@woodpecker-js/teams",
   "version": "0.1.0",
   "description": "Microsoft Teams webhook notification service (shoutrrr port)",
   "type": "module",
@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@woodpecker/core": "workspace:*"
+    "@woodpecker-js/core": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "^1.2.0",

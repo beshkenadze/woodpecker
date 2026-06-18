@@ -8,7 +8,7 @@ import {
   parseBody,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config, fieldSchema } from "./config.js";
 import { type ApiResponse, formatApiError } from "./payload.js";

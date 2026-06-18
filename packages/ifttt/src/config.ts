@@ -4,7 +4,7 @@ import {
   type FieldSchema,
   PropKeyResolver,
   type ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 
 /** Scheme is the identifying part of this service's configuration URL. */
 export const Scheme = "ifttt";

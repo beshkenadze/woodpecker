@@ -1,5 +1,5 @@
 /**
- * @woodpecker/core — canonical shared core for the shoutrrr Node.js port.
+ * @woodpecker-js/core — canonical shared core for the shoutrrr Node.js port.
  *
  * The service registry starts EMPTY; services self-register via
  * `registerService` during the integration pass.
