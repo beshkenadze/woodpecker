@@ -1,4 +1,4 @@
-import type { Service } from "@woodpecker/core";
+import type { Service } from "@woodpecker-js/core";
 import { TeamsService } from "./teams.js";
 
 export type { WebhookParts } from "./config.js";

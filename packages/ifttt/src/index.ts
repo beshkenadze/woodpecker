@@ -1,4 +1,9 @@
-export type { Logger, Params, Service, ServiceConfig } from "@woodpecker/core";
+export type {
+  Logger,
+  Params,
+  Service,
+  ServiceConfig,
+} from "@woodpecker-js/core";
 export { Config, Scheme } from "./config.js";
 export { IftttService } from "./ifttt.js";
 export { createJSONToSend, type JsonPayload } from "./payload.js";

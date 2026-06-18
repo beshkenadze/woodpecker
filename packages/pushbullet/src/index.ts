@@ -1,4 +1,4 @@
-// @woodpecker/pushbullet — public entry point.
+// @woodpecker-js/pushbullet — public entry point.
 
 import { PushbulletService } from "./pushbullet.js";
 

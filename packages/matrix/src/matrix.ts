@@ -5,7 +5,7 @@ import {
   type Params,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { MatrixClient } from "./client.js";
 import { Config, Scheme } from "./config.js";

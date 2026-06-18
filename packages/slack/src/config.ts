@@ -4,8 +4,8 @@ import type {
   EnumFormatter,
   FieldSchema,
   ServiceConfig,
-} from "@woodpecker/core";
-import { EnumlessConfig, PropKeyResolver } from "@woodpecker/core";
+} from "@woodpecker-js/core";
+import { EnumlessConfig, PropKeyResolver } from "@woodpecker-js/core";
 import { Token } from "./token.js";
 
 /** Scheme is the identifying part of this service's configuration URL. */

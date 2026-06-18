@@ -6,7 +6,7 @@ import {
   type Logger,
   type Params,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config } from "./config.js";
 

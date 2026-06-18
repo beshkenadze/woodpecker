@@ -1,7 +1,7 @@
-import type { Service } from "@woodpecker/core";
+import type { Service } from "@woodpecker-js/core";
 import { MattermostService } from "./mattermost.js";
 
-export type { Logger, Params, Service } from "@woodpecker/core";
+export type { Logger, Params, Service } from "@woodpecker-js/core";
 export {
   createConfigFromURL,
   MattermostConfig,

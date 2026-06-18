@@ -10,13 +10,13 @@ from a single `scheme://…` URL. Runs on [Bun](https://bun.sh); no Go at runtim
 ## Install
 
 ```bash
-bun add @woodpecker/woodpecker
+bun add @woodpecker-js/woodpecker
 ```
 
 ## Library usage
 
 ```ts
-import { send, createSender } from "@woodpecker/woodpecker";
+import { send, createSender } from "@woodpecker-js/woodpecker";
 
 // one-off
 await send("slack://token-a/token-b/token-c@channel", "Deploy finished ✅");
@@ -26,8 +26,8 @@ const sender = createSender("discord://token@id", "telegram://token@telegram?cha
 const errors = await sender.send("Build broke ❌");
 ```
 
-Individual services are also published standalone (e.g. `@woodpecker/slack`),
-all sharing the canonical `@woodpecker/core`.
+Individual services are also published standalone (e.g. `@woodpecker-js/slack`),
+all sharing the canonical `@woodpecker-js/core`.
 
 ## CLI
 
@@ -47,7 +47,7 @@ woodpecker verify -u "slack://token-a/token-b/token-c@channel"
 This is a [Bun](https://bun.sh) workspace orchestrated by
 [Turborepo](https://turbo.build) and linted/formatted by
 [Biome](https://biomejs.dev). Each service is its own package under `packages/`,
-plugging into `@woodpecker/core`.
+plugging into `@woodpecker-js/core`.
 
 ```bash
 bun install

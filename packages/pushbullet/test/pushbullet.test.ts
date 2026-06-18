@@ -1,6 +1,6 @@
 // Mirror of Go pkg/services/pushbullet/pushbullet_test.go
 //
-// HTTP mocking note: @woodpecker/core's JsonClient is built on the global `fetch`
+// HTTP mocking note: @woodpecker-js/core's JsonClient is built on the global `fetch`
 // API, so tests override `globalThis.fetch` to assert the real POST endpoint,
 // Access-Token header and JSON body — and that 200 resolves while errors reject.
 // This drives the real JsonClient and PushbulletService code paths end-to-end.

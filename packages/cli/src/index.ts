@@ -1,5 +1,5 @@
 /**
- * @woodpecker/cli public exports.
+ * @woodpecker-js/cli public exports.
  *
  * The CLI is primarily a binary (see ./cli.ts), but the command builders and
  * core re-exports are exposed for programmatic use and testing.

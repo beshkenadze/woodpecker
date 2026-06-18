@@ -1,7 +1,7 @@
-import type { Service } from "@woodpecker/core";
+import type { Service } from "@woodpecker-js/core";
 import { SlackService } from "./slack.js";
 
-export type { Logger, Params, Service } from "@woodpecker/core";
+export type { Logger, Params, Service } from "@woodpecker-js/core";
 export { Config, configSchema, createConfigFromURL, Scheme } from "./config.js";
 export { ErrorInvalidToken, ErrorMismatchedTokenSeparators } from "./errors.js";
 export {

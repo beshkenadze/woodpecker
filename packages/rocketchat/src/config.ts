@@ -1,5 +1,5 @@
-import type { EnumFormatter, ServiceConfig } from "@woodpecker/core";
-import { EnumlessConfig } from "@woodpecker/core";
+import type { EnumFormatter, ServiceConfig } from "@woodpecker-js/core";
+import { EnumlessConfig } from "@woodpecker-js/core";
 
 // Scheme is the identifying part of this service's configuration URL.
 export const Scheme = "rocketchat";

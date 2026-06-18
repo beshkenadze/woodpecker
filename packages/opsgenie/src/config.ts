@@ -2,7 +2,7 @@ import {
   type EnumFormatter,
   goQueryEscape,
   type ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { Entity } from "./payload.ts";
 
 export const Scheme = "opsgenie";

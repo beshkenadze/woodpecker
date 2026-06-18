@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import type { Logger, Params } from "@woodpecker/core";
+import type { Logger, Params } from "@woodpecker-js/core";
 import { Config } from "../src/config.js";
 import { descriptor, LoggerService } from "../src/index.js";
 

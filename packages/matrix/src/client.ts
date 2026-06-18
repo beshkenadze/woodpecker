@@ -1,6 +1,6 @@
 // Matrix API client — port of Go matrix_client.go.
 
-import { JsonClient, type Logger } from "@woodpecker/core";
+import { JsonClient, type Logger } from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import {
   type ApiReqLogin,

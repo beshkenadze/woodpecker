@@ -1,7 +1,7 @@
-import type { Service } from "@woodpecker/core";
+import type { Service } from "@woodpecker-js/core";
 import { GoogleChatService } from "./googlechat.ts";
 
-export type { Logger, Params, Service } from "@woodpecker/core";
+export type { Logger, Params, Service } from "@woodpecker-js/core";
 export { GoogleChatConfig, Scheme } from "./config.ts";
 export { GoogleChatService } from "./googlechat.ts";
 

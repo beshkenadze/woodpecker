@@ -4,7 +4,7 @@ import { NtfyService } from "../src/ntfy.js";
 import { formatApiError } from "../src/payload.js";
 import { Priority, priorityEnum } from "../src/priority.js";
 
-// @woodpecker/core's JsonClient is built on the standard fetch API. undici's
+// @woodpecker-js/core's JsonClient is built on the standard fetch API. undici's
 // MockAgent does not work under Bun, so the idiomatic Bun equivalent is to
 // override globalThis.fetch and assert the endpoint, body, headers and status
 // handling from the captured RequestInit.
@@ -27,7 +27,7 @@ function headersToRecord(
   if (!headers) {
     return record;
   }
-  // @woodpecker/core's JsonClient always passes a plain Record headers object,
+  // @woodpecker-js/core's JsonClient always passes a plain Record headers object,
   // but normalize the Headers / array shapes too for robustness.
   if (headers instanceof Headers) {
     headers.forEach((value, key) => {

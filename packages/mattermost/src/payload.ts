@@ -1,4 +1,4 @@
-import type { Params } from "@woodpecker/core";
+import type { Params } from "@woodpecker-js/core";
 import type { MattermostConfig } from "./config.js";
 
 /** JSON payload for mattermost notifications (port of mattermost_json.go JSON). */

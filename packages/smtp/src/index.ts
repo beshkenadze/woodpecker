@@ -1,4 +1,4 @@
-// @woodpecker/smtp public API.
+// @woodpecker-js/smtp public API.
 
 export type {
   EnumFormatter,
@@ -6,7 +6,7 @@ export type {
   Params,
   Service,
   ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 export { AuthType, authTypeFormatter } from "./authType.js";
 export { Config, DefaultPort, Scheme, smtpFieldSchema } from "./config.js";
 export {
@@ -28,7 +28,7 @@ export {
   SmtpService,
 } from "./smtp.js";
 
-import type { Service } from "@woodpecker/core";
+import type { Service } from "@woodpecker-js/core";
 import { SmtpService } from "./smtp.js";
 
 /** descriptor registers this service with the scheme registry. */

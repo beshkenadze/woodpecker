@@ -1,6 +1,6 @@
 import { OpsgenieService } from "./opsgenie.ts";
 
-export type { Logger, Params, Service } from "@woodpecker/core";
+export type { Logger, Params, Service } from "@woodpecker-js/core";
 export { Config, defaultHost, defaultPort, Scheme } from "./config.ts";
 export { OpsgenieService } from "./opsgenie.ts";
 export {

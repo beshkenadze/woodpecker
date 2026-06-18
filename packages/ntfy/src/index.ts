@@ -1,6 +1,11 @@
-// Public entry point for @woodpecker/ntfy.
+// Public entry point for @woodpecker-js/ntfy.
 
-export type { Logger, Params, Service, ServiceConfig } from "@woodpecker/core";
+export type {
+  Logger,
+  Params,
+  Service,
+  ServiceConfig,
+} from "@woodpecker-js/core";
 export { Config, fieldSchema, Scheme } from "./config.js";
 export { NtfyService, type NtfyServiceOptions } from "./ntfy.js";
 export { type ApiResponse, formatApiError } from "./payload.js";

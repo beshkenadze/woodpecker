@@ -1,4 +1,4 @@
-// Public entrypoint for @woodpecker/join.
+// Public entrypoint for @woodpecker-js/join.
 
 import { JoinService } from "./join.js";
 

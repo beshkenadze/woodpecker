@@ -1,7 +1,7 @@
 // Port of Go pkg/services/logger/logger.go
 
-import type { Logger, Params, Service } from "@woodpecker/core";
-import { Standard } from "@woodpecker/core";
+import type { Logger, Params, Service } from "@woodpecker-js/core";
+import { Standard } from "@woodpecker-js/core";
 import { Config } from "./config.js";
 
 /**

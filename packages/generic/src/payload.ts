@@ -1,4 +1,4 @@
-import type { Params } from "@woodpecker/core";
+import type { Params } from "@woodpecker-js/core";
 
 /**
  * jsonPayload builds the JSON request body for the `json`/`JSON` template, merging the

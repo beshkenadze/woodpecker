@@ -1,4 +1,4 @@
-// Public entry point for @woodpecker/telegram
+// Public entry point for @woodpecker-js/telegram
 
 export { Client, getResponseError } from "./client.js";
 export { Config, fields, isTokenValid, Scheme } from "./config.js";

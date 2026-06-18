@@ -1,28 +1,42 @@
 {
-  "name": "@woodpecker/join",
+  "name": "@woodpecker-js/join",
   "version": "0.1.0",
   "description": "Shoutrrr Join notification service (Node.js/Bun port)",
   "type": "module",
-  "main": "./src/index.ts",
+  "main": "./dist/index.mjs",
   "module": "./src/index.ts",
-  "types": "./src/index.ts",
+  "types": "./dist/index.d.mts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
   },
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
-    "build": "tsc --noEmit",
-    "test": "bun test"
+    "build": "tsdown",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
-    "@woodpecker/core": "workspace:*",
+    "@woodpecker-js/core": "workspace:*",
     "undici": "^8.5.0"
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "tsdown": "^0.22.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beshkenadze/woodpecker.git",
+    "directory": "packages/join"
+  },
+  "homepage": "https://github.com/beshkenadze/woodpecker#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }

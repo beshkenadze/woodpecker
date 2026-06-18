@@ -1,7 +1,7 @@
 // Port of Go pkg/services/smtp/smtp_authtype.go.
 
-import type { EnumFormatter } from "@woodpecker/core";
-import { createEnumFormatter } from "@woodpecker/core";
+import type { EnumFormatter } from "@woodpecker-js/core";
+import { createEnumFormatter } from "@woodpecker-js/core";
 
 /** AuthType is the SMTP authentication method (Go: authType). */
 export enum AuthType {

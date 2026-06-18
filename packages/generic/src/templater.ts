@@ -1,4 +1,4 @@
-import type { Params } from "@woodpecker/core";
+import type { Params } from "@woodpecker-js/core";
 
 /** A compiled template that renders params into a string. */
 export interface Template {

@@ -6,7 +6,7 @@ import {
   PropKeyResolver,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { Client } from "./client.js";
 import { Config, fields } from "./config.js";
 import { createSendMessagePayload } from "./payload.js";

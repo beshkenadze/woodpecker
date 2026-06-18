@@ -198,7 +198,7 @@ describe("verify command", () => {
     // CLI-style configFields(). Guarding only on getConfig() would call
     // getConfigFormat() and throw "config.configFields is not a function".
     const { registerService } = await import("../src/core/router.js");
-    const { descriptor } = await import("@woodpecker/telegram");
+    const { descriptor } = await import("@woodpecker-js/telegram");
     for (const scheme of descriptor.schemes) {
       registerService(
         scheme,

@@ -1,4 +1,4 @@
-import type { Params } from "@woodpecker/core";
+import type { Params } from "@woodpecker-js/core";
 import type { Config } from "./config.js";
 
 /** JsonPayload is the actual notification payload, ported from ifttt_json.go. */

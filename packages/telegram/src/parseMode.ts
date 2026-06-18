@@ -1,5 +1,5 @@
 // Port of telegram_parsemode.go
-import { createEnumFormatter, type EnumFormatter } from "@woodpecker/core";
+import { createEnumFormatter, type EnumFormatter } from "@woodpecker-js/core";
 
 /** ParseMode enum values, matching the Go iota ordering. */
 export const ParseMode = {

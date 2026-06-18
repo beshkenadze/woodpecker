@@ -3,7 +3,7 @@ import {
   EnumlessConfig,
   type FieldSchema,
   PropKeyResolver,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 
 export const Scheme = "matrix";
 export const defaultDeviceID = "shoutrrr";

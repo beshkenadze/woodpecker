@@ -4,7 +4,7 @@ import {
   type FieldSchema,
   PropKeyResolver,
   type ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { Priority, priorityEnum } from "./priority.js";
 
 /** Scheme is the identifying part of this service's configuration URL. */
@@ -15,7 +15,7 @@ export const Scheme = "ntfy";
  * by url.UserPassword). The literal set, verified against Go's url.UserPassword
  * output, is the unreserved chars plus the sub-delims $ & + , ; = (space and
  * everything else are percent-encoded; note ! and ' are escaped). ntfy-specific:
- * it is the only consumer, so it lives here rather than in @woodpecker/core.
+ * it is the only consumer, so it lives here rather than in @woodpecker-js/core.
  */
 function encodeUserinfoComponent(s: string): string {
   const keep = /[A-Za-z0-9\-._~$&+,;=]/;

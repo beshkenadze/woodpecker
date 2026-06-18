@@ -5,7 +5,7 @@ import {
   type PropKeyResolver,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config } from "./config.js";
 import { createJSONToSend } from "./payload.js";

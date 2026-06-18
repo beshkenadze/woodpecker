@@ -4,7 +4,7 @@ export type {
   Params,
   Service,
   ServiceConfig,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 export { Config, Scheme } from "./config.js";
 export { LoggerService } from "./logger.js";
 

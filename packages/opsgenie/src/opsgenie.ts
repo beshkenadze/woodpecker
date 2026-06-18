@@ -6,7 +6,7 @@ import {
   parseBody,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config } from "./config.ts";
 import { type AlertPayload, Entity, serializeAlertPayload } from "./payload.ts";

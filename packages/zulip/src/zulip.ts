@@ -1,6 +1,6 @@
 import { STATUS_CODES } from "node:http";
-import type { Logger, Params, Service } from "@woodpecker/core";
-import { JsonClient, Standard } from "@woodpecker/core";
+import type { Logger, Params, Service } from "@woodpecker-js/core";
+import { JsonClient, Standard } from "@woodpecker-js/core";
 import type { Dispatcher } from "undici";
 import { Config, ErrorMessage } from "./config.ts";
 

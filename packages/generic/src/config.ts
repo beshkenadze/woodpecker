@@ -2,7 +2,7 @@ import {
   EnumlessConfig,
   type FieldSchema,
   PropKeyResolver,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import {
   buildQueryWithCustomFields,
   setConfigPropsFromQuery,

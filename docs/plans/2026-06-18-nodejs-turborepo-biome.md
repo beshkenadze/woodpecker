@@ -191,7 +191,7 @@ Expected: 23 successful.
 `organizeImports` may have reordered bare side-effect imports. Verify the two ordering-sensitive spots:
 - Run: `bun packages/cli/src/cli.ts send -u logger:// -m "ordering ok"`
   Expected: prints `ordering ok` then `Notification sent`, exit 0.
-- Run: `bunx turbo test --filter=@woodpecker/shoutrrr --force`
+- Run: `bunx turbo test --filter=@woodpecker-js/shoutrrr --force`
   Expected: umbrella registry tests pass (all schemes register).
 
 If either fails because imports were reordered (e.g. `cli.ts` now imports `./register-services.js` before `./core/index.js`): restore the required order and add `// biome-ignore assist/source/organizeImports: side-effect order matters` above the import group, then re-commit as a fixup to Task 5's commit.
@@ -206,7 +206,7 @@ If either fails because imports were reordered (e.g. `cli.ts` now imports `./reg
 
 Run: `bunx biome check .`
 Expected: a list of lint errors not auto-fixed. Likely categories:
-- `lint/suspicious/noExplicitAny` — in migrated tests using `globalThis.fetch = (async (input: any, init?: RequestInit) => …) as typeof fetch`. Fix: type the param precisely, e.g. `(input: Request | string | URL, init?: RequestInit)`, or import and use `FetchLike` from `@woodpecker/core`.
+- `lint/suspicious/noExplicitAny` — in migrated tests using `globalThis.fetch = (async (input: any, init?: RequestInit) => …) as typeof fetch`. Fix: type the param precisely, e.g. `(input: Request | string | URL, init?: RequestInit)`, or import and use `FetchLike` from `@woodpecker-js/core`.
 - `lint/style/noNonNullAssertion`, `lint/correctness/noUnusedImports`, etc.
 
 **Step 2: Fix each diagnostic at its source**

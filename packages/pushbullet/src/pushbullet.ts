@@ -8,7 +8,7 @@ import {
   type Params,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { Config } from "./config.js";
 import {
   newNotePush,

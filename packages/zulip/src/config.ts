@@ -1,4 +1,4 @@
-import { EnumlessConfig } from "@woodpecker/core";
+import { EnumlessConfig } from "@woodpecker-js/core";
 
 /** Identifying scheme for the Zulip service configuration URL. */
 export const Scheme = "zulip";

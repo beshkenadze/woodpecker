@@ -7,7 +7,7 @@ import {
   PropKeyResolver,
   type Service,
   Standard,
-} from "@woodpecker/core";
+} from "@woodpecker-js/core";
 import { Config } from "./config.js";
 import { type ApiResponse, buildPushPayload } from "./payload.js";
 

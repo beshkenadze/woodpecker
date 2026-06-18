@@ -1,7 +1,7 @@
 // Message item shapes and level helpers used by the Discord payload/chunking.
-// These mirror Go pkg/types message structures that @woodpecker/core does not
+// These mirror Go pkg/types message structures that @woodpecker-js/core does not
 // (yet) expose; they live here as service-local message helpers.
-import { MessageLevel } from "@woodpecker/core";
+import { MessageLevel } from "@woodpecker-js/core";
 
 /** Number of known message levels (used to size color arrays). */
 export const MessageLevelCount = 5;
