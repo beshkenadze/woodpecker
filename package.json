@@ -7,13 +7,18 @@
   ],
   "scripts": {
     "build": "turbo build",
+    "typecheck": "turbo typecheck",
     "test": "turbo test",
     "check": "biome check",
     "format": "biome check --write",
-    "ci": "turbo build test && biome ci"
+    "ci": "turbo build typecheck test && biome ci",
+    "version": "changeset version",
+    "release": "turbo build && changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",
+    "@changesets/cli": "^2.31.0",
+    "tsdown": "^0.22.3",
     "turbo": "^2.9.18"
   }
 }

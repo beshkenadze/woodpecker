@@ -1,21 +1,24 @@
 {
   "name": "@woodpecker/cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Woodpecker CLI — URL-driven notification sender (Node.js/Bun port of shoutrrr)",
   "type": "module",
   "bin": {
-    "woodpecker": "./src/cli.ts"
+    "woodpecker": "./dist/cli.mjs"
   },
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
   },
   "files": [
-    "src",
     "dist"
   ],
   "scripts": {
-    "build": "tsc --noEmit",
-    "test": "bun test"
+    "build": "tsdown",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
   },
   "license": "MIT",
   "engines": {
@@ -45,6 +48,18 @@
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "tsdown": "^0.22.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beshkenadze/woodpecker.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/beshkenadze/woodpecker#readme",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "publishConfig": {
+    "access": "public"
   }
 }

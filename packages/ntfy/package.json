@@ -1,15 +1,19 @@
 {
   "name": "@woodpecker/ntfy",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ntfy notification service for shoutrrr (Node.js/Bun port)",
   "type": "module",
-  "main": "./src/index.ts",
+  "main": "./dist/index.mjs",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
   },
   "scripts": {
-    "build": "tsc --noEmit",
-    "test": "bun test"
+    "build": "tsdown",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@woodpecker/core": "workspace:*",
@@ -17,6 +21,21 @@
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "tsdown": "^0.22.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beshkenadze/woodpecker.git",
+    "directory": "packages/ntfy"
+  },
+  "homepage": "https://github.com/beshkenadze/woodpecker#readme",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
